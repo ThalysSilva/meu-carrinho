@@ -1,3 +1,90 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "next/core-web-vitals",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint", 
+      "react-hooks"
+  ],
+  "rules": {
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": "warn",
+    "arrow-parens": "warn",
+    "comma-dangle": "off",
+    "prefer-const": "warn",
+    //"no-unused-vars": "warn",
+    "spaced-comment": "warn",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "camelcase": "off",
+    "no-invalid-this": "warn",
+    "no-unused-expressions": "warn",
+    "space-in-parens": [2, "never"],
+    "array-bracket-spacing": [2, "never"],
+    "computed-property-spacing": [2, "never"],
+    "object-curly-spacing": [2, "always"],
+    "no-console": ["error"],
+    "react-hooks/exhaustive-deps": "off",
+    "valid-jsdoc": "off",
+    "guard-for-in": "warn",
+    "no-debugger": "error",
+    "one-var": "off",
+    "new-cap": "off",
+    "require-jsdoc": "off",
+    //"no-var": "warn",
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "max-len": [
+      "warn",
+      {
+
+        "tabWidth": 2,
+        "ignoreStrings": true,
+        "code": 120,
+        "comments": 80
+      }
+    ],
+
+    // typescript
+    "@typescript-eslint/no-unused-vars": ["warn", { "args": "none" }],
+
+    // react
+    "react/prop-types": "warn",
+    "react/no-find-dom-node": "warn",
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-no-bind": "off",
+    "react/jsx-no-literals": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/display-name": "warn",
+    "react/no-string-refs": "off",
+    "react/prefer-stateless-function": "warn",
+    "require-jsdoc-except/require-jsdoc": "off"
+  }
 }
