@@ -8,6 +8,7 @@ import Head from 'next/head';
 import { Container } from '../components/shared/Container';
 
 import '../styles/globals.css';
+import { CartProvider } from '../context/cart';
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -30,13 +31,15 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return getLayout(
     <QueryClientProvider client={queryClient}>
-      <Head>
-        <title>{'Teste - CodeBy'}</title>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-      </Head>
-      <Container>
-        <Component {...pageProps} />
-      </Container>
+      <CartProvider>
+        <Head>
+          <title>{'Teste - CodeBy'}</title>
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+        </Head>
+        <Container>
+          <Component {...pageProps} />
+        </Container>
+      </CartProvider>
     </QueryClientProvider>
   );
 }
