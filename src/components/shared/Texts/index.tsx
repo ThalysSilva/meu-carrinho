@@ -46,3 +46,11 @@ export function H4(props: ChildrenProps) {
     </h4>
   );
 }
+
+export function H5(props: ChildrenProps) {
+  return (
+    <h5 data-testid={props.dataTestId} className={'text-xs sm:text-sm ' + props.className}>
+      {props.children}
+    </h5>
+  );
+}
