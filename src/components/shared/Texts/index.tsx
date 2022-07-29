@@ -41,7 +41,7 @@ export function H3(props: ChildrenProps) {
 
 export function H4(props: ChildrenProps) {
   return (
-    <h4 data-testid={props.dataTestId} className={'text-sm sm:text-md ' + props.className}>
+    <h4 data-testid={props.dataTestId} className={'text-sm sm:text-base ' + props.className}>
       {props.children}
     </h4>
   );
