@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     <QueryClientProvider client={queryClient}>
       <CartProvider>
         <Head>
-          <title>{'Teste - CodeBy'}</title>
+          <title>{'Meu carrinho'}</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <Container>
