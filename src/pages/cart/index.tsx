@@ -2,11 +2,11 @@ import React from 'react';
 import { HeaderCart } from '../../components/pageCart/Header';
 import { ItemsListCart } from '../../components/pageCart/ItemsList';
 import { Button } from '../../components/shared/Button';
-
 import { Container } from '../../components/shared/Container';
 import { Divider } from '../../components/shared/Divider';
 import { H2 } from '../../components/shared/Texts';
-export default function Cart() {
+import WithCartSetted from '../../components/shared/WithCartSetted';
+function Cart() {
   const total = '9,55';
   return (
     <Container
@@ -34,3 +34,5 @@ export default function Cart() {
     </Container>
   );
 }
+
+export default WithCartSetted(Cart);
