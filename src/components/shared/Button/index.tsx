@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
-import LoadingSpinner from "../../../assets/icon/LoadingSpinner";
+import React, { ReactNode } from 'react';
+import LoadingSpinner from '../../../assets/icon/LoadingSpinner';
 
 type ButtonProps = {
   onClick?: (ev?: React.MouseEvent<HTMLElement>) => void;
-  type?: "button" | "submit" | "reset" | undefined;
+  type?: 'button' | 'submit' | 'reset' | undefined;
   dataTestId?: string;
   className?: string;
   isDisabled?: boolean;
@@ -19,7 +19,7 @@ export function Button(props: ButtonProps) {
       onClick={props.onClick}
       data-testid={props.dataTestId}
       type={props.type}
-      className={"flex flex-1 bg-black"}
+      className={'flex flex-1 mx-4 bg-[#3b74f2] text-white items-center h-full rounded-xl'}
     >
       {props.isLoading ? (
         <>
