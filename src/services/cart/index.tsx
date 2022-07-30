@@ -1,7 +1,7 @@
 import config from '../../config';
 import middleware from '../middleware';
 
-export type CartType = keyof typeof cart
+export type CartType = keyof typeof cart;
 
 const { cart } = config.apiRoutes;
 
