@@ -11,7 +11,7 @@ export function CartProvider({ children }: CartProviderProps) {
   const [cartItems, setCartItems] = useState<CartItem[]>([] as CartItem[]);
 
   return (
-    <CartContext.Provider value={{ cartItems, setCartItems, isCartItemsSetted: !!cartItems }}>
+    <CartContext.Provider value={{ cartItems, setCartItems, isCartItemsSetted: !!cartItems.length }}>
       {children}
     </CartContext.Provider>
   );
