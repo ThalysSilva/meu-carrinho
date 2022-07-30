@@ -4,16 +4,16 @@ import { ImageWithFrame } from '../../shared/ImageWithFrame';
 import { H3, H4, H5 } from '../../shared/Texts';
 
 type Props = {
+  sellPrice: string;
   itemName: string;
   imgSrc: string;
   price: string;
-  sellPrice: string;
+  key?: number;
 };
 
-export function ItemCart({ imgSrc, itemName, price, sellPrice }: Props) {
-  
+export function ItemCart({ imgSrc, itemName, price, sellPrice, key }: Props) {
   return (
-    <div className="flex flex-row gap-4 items-center">
+    <div key={key} data-testid={`${itemName}-${key}`} className="flex flex-row gap-4 items-center">
       <ImageWithFrame src={imgSrc} width={'100px'} height={'100px'} />
       <div className={'flex flex-col gap-1'}>
         <H3>{capitalize(itemName)}</H3>
