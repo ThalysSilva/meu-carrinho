@@ -21,9 +21,9 @@ const Home: NextPage = () => {
       <div className={'flex flex-col sm:flex-row gap-10 sm:gap-4 px-4'}>
         <Button
           onClick={() => onClick('lessOrEqualThanTen')}
-          dataTestId="lessThanTenButton"
-          type="button"
+          dataTestId={'lessThanTenButton'}
           isLoading={isLoading}
+          type={'button'}
         >
           <div className="flex justify-center items-center w-full h-[100px]">
             {'Exemplo de carrinho MENOR que R$10,00'}
@@ -32,9 +32,9 @@ const Home: NextPage = () => {
 
         <Button
           onClick={() => onClick('moreThanTen')}
-          dataTestId="moreThanTenButton"
-          type="button"
+          dataTestId={'moreThanTenButton'}
           isLoading={isLoading}
+          type={'button'}
         >
           <div className="flex justify-center items-center w-full h-[100px]">
             {'Exemplo de carrinho MAIOR que R$10,00'}
