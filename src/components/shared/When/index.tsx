@@ -1,4 +1,5 @@
-import React, { ReactElement, ReactNode } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { ReactElement, ReactNode } from 'react';
 
 type Props = {
   children: ReactNode | (() => void);
@@ -6,6 +7,6 @@ type Props = {
 };
 
 export function When({ children, value }: Props) {
-  if (value) return (typeof children === "function" ? children() : children) as ReactElement;
+  if (value) return (typeof children === 'function' ? children() : children) as ReactElement;
   return <React.Fragment />;
 }
