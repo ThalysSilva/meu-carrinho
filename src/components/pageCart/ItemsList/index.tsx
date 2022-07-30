@@ -1,53 +1,22 @@
 import React from 'react';
+import { CartItem } from '../../../context/cart/types';
 import { ItemCart } from '../Item';
 
-export function ItemsListCart() {
-  const placeholderImg =
-    'http://codeby.vteximg.com.br/arquivos/ids/159959-800-1029/truffon-meio-amargo.png?v=636930938547630000';
+type Props = {
+  cartItems: CartItem[];
+};
+export function ItemsListCart({ cartItems }: Props) {
   return (
     <div className={'flex flex-col flex-1 px-4 mb-4 gap-4 overflow-x-hidden'}>
-      <ItemCart
-        imgSrc={placeholderImg}
-        price={'220'}
-        sellPrice={'220'}
-        itemName={'trufa de morango'}
-        key={1}
-      />
-      <ItemCart
-        imgSrc={placeholderImg}
-        price={'220'}
-        sellPrice={'220'}
-        itemName={'trufa de morango'}
-        key={1}
-      />
-      <ItemCart
-        imgSrc={placeholderImg}
-        price={'220'}
-        sellPrice={'220'}
-        itemName={'trufa de morango'}
-        key={1}
-      />
-      <ItemCart
-        imgSrc={placeholderImg}
-        price={'220'}
-        sellPrice={'220'}
-        itemName={'trufa de morango'}
-        key={1}
-      />
-      <ItemCart
-        imgSrc={placeholderImg}
-        price={'220'}
-        sellPrice={'220'}
-        itemName={'trufa de morango'}
-        key={1}
-      />
-      <ItemCart
-        imgSrc={placeholderImg}
-        price={'220'}
-        sellPrice={'220'}
-        itemName={'trufa de morango'}
-        key={1}
-      />
+      {cartItems.map((item, index) => (
+        <ItemCart
+          sellPrice={item.sellPrice}
+          imgSrc={item.imgUrl}
+          itemName={item.name}
+          price={item.price}
+          key={index}
+        />
+      ))}
     </div>
   );
 }
