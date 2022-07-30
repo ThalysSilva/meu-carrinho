@@ -1,5 +1,5 @@
 export function normalizePrice(price: string) {
-  const priceString = price.toString()
+  const priceString = price.toString();
   const normalizedPrice = priceString.slice(0, -2) + ',' + priceString.slice(-2);
   if (priceString.length < 3) return '0' + normalizedPrice;
   return normalizedPrice;

@@ -8,7 +8,7 @@ import { H2, H3 } from '../../components/shared/Texts';
 import { When } from '../../components/shared/When';
 import WithCartSetted from '../../components/shared/WithCartSetted';
 import useCart from '../../hooks/pageCart/useCart';
-import { normalizePrice } from '../../util/functions';
+import { normalizePrice } from '../../utils/functions';
 function Cart() {
   const { cartItems, total, handleClick } = useCart();
   return (
