@@ -19,13 +19,12 @@ export function Button(props: ButtonProps) {
       onClick={props.onClick}
       data-testid={props.dataTestId}
       type={props.type}
-      className={`flex flex-1 mx-4 bg-[#3b74f2] text-white items-center h-full rounded-xl ${
-        props.className ? props.className : ''
-      }`}
+      className={`flex flex-1 bg-[#3b74f2] text-white items-center justify-center gap-4 h-full rounded-xl 
+      hover:bg-[#115bfa] duration-200 ${props.className ? props.className : ''}`}
     >
       {props.isLoading ? (
         <>
-          <span className="font-normal text-lg text-primary-white leading-6">{`Carregando`}</span>
+          <span className="flex flex-row items-center justify-center font-normal text-lg text-primary-white leading-6 h-[100px]">{`Carregando`}</span>
           <LoadingSpinner />
         </>
       ) : (
