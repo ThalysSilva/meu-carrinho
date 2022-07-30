@@ -12,7 +12,7 @@ const WithCartSetted: withAuthenticationFn = (Component) => {
     const router = useRouter();
 
     useEffect(() => {
-      if (!isCartItemsSetted) router.push('/login');
+      if (!isCartItemsSetted) router.push('/');
     }, [isCartItemsSetted]);
 
     return isCartItemsSetted ? <Component /> : null;
