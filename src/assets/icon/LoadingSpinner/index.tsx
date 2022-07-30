@@ -1,7 +1,7 @@
 import React from 'react'
 export default function LoadingSpinner() {
   return (
-    <span className="spinner-container">
+    <span className="animate-spin">
       <svg
         width="20"
         height="20"
