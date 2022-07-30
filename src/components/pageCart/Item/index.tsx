@@ -1,5 +1,5 @@
 import React from 'react';
-import { capitalize, normalizePrice } from '../../../util/functions';
+import { capitalize, normalizePrice } from '../../../utils/functions';
 import { ImageWithFrame } from '../../shared/ImageWithFrame';
 import { H3, H4, H5 } from '../../shared/Texts';
 
@@ -8,16 +8,14 @@ type Props = {
   itemName: string;
   imgSrc: string;
   price: string;
-  key?: number;
   id: string;
 };
 
-export function ItemCart({ imgSrc, itemName, price, sellPrice, key, id }: Props) {
+export function ItemCart({ imgSrc, itemName, price, sellPrice, id }: Props) {
   return (
     <div
       className="flex flex-row gap-4 items-center"
       data-testid={`${itemName}-${id}`}
-      key={key}
       id={id}
     >
       <ImageWithFrame src={imgSrc} width={'100px'} height={'100px'} />

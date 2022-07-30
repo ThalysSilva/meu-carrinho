@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 
-import { capitalize, normalizePrice } from '../../../../util/functions';
+import { capitalize, normalizePrice } from '../../../../utils/functions';
 import { ItemCart } from '..';
 
 const propsMock = {
@@ -9,7 +9,6 @@ const propsMock = {
   imgSrc: 'http://imgSrcMock.mock',
   sellPrice: '200',
   price: '240',
-  key: 1,
   id: '1'
 };
 
