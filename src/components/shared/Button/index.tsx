@@ -19,7 +19,9 @@ export function Button(props: ButtonProps) {
       onClick={props.onClick}
       data-testid={props.dataTestId}
       type={props.type}
-      className={'flex flex-1 mx-4 bg-[#3b74f2] text-white items-center h-full rounded-xl'}
+      className={`flex flex-1 mx-4 bg-[#3b74f2] text-white items-center h-full rounded-xl ${
+        props.className ? props.className : ''
+      }`}
     >
       {props.isLoading ? (
         <>
