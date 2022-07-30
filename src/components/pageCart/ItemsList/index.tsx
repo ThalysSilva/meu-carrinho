@@ -11,6 +11,7 @@ export function ItemsListCart({ cartItems }: Props) {
       {cartItems.map((item, index) => (
         <ItemCart
           sellPrice={item.sellPrice}
+          id={index.toString()}
           imgSrc={item.imgUrl}
           itemName={item.name}
           price={item.price}
