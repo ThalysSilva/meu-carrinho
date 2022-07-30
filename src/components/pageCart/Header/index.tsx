@@ -1,19 +1,18 @@
-import { useRouter } from 'next/router';
 import React from 'react';
 
 import ArrowLeftIcon from '../../../assets/icon/ArrowLeft';
+import useHeaderCart from './hooks/useHeaderCart';
 import { Divider } from '../../shared/Divider';
 import { H1 } from '../../shared/Texts';
 
 export function HeaderCart() {
-  const router = useRouter();
-  function handleReturnClick() {
-    router.push('/');
-  }
+  const { handleReturnClick } = useHeaderCart();
+
   return (
     <div className={'flex flex-col w-full justify-center items-center min-w-max px-4'}>
       <div className={'flex flex-row justify-between w-full mb-4'}>
         <button
+          data-testid={'returnButton'}
           type={'button'}
           onClick={handleReturnClick}
           className="flex w-10 h-auto rounded-xl justify-center items-center "
