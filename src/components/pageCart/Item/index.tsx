@@ -8,7 +8,7 @@ type Props = {
   itemName: string;
   imgSrc: string;
   price: string;
-  key?: number;
+  key: number;
 };
 
 export function ItemCart({ imgSrc, itemName, price, sellPrice, key }: Props) {
