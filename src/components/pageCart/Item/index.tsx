@@ -1,6 +1,7 @@
 import React from 'react';
+import { capitalize, normalizePrice } from '../../../util/functions';
 import { ImageWithFrame } from '../../shared/ImageWithFrame';
-import { H2, H3, H4, H5 } from '../../shared/Texts';
+import { H3, H4, H5 } from '../../shared/Texts';
 
 type Props = {
   itemName: string;
@@ -10,14 +11,15 @@ type Props = {
 };
 
 export function ItemCart({ imgSrc, itemName, price, sellPrice }: Props) {
+  
   return (
     <div className="flex flex-row gap-4 items-center">
       <ImageWithFrame src={imgSrc} width={'100px'} height={'100px'} />
       <div className={'flex flex-col gap-1'}>
-        <H3>{itemName}</H3>
+        <H3>{capitalize(itemName)}</H3>
         <div className={'flex flex-col'}>
-          <H5 className={'font-semibold text-gray-400'}>{`R$ ${price}`}</H5>
-          <H4 className={'font-semibold '}>{`R$ ${sellPrice}`}</H4>
+          <H5 className={'font-semibold text-gray-400'}>{`R$ ${normalizePrice(price)}`}</H5>
+          <H4 className={'font-semibold '}>{`R$ ${normalizePrice(sellPrice)}`}</H4>
         </div>
       </div>
     </div>
