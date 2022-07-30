@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { HeaderCart } from '../../components/pageCart/Header';
 import { ItemsListCart } from '../../components/pageCart/ItemsList';
 import { Button } from '../../components/shared/Button';

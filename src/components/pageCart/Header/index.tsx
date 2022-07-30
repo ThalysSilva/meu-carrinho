@@ -9,8 +9,8 @@ export function HeaderCart() {
   const { handleReturnClick } = useHeaderCart();
 
   return (
-    <div className={'flex flex-col w-full justify-center items-center min-w-max px-4'}>
-      <div className={'flex flex-row justify-between w-full mb-4'}>
+    <div className={'flex flex-col w-full justify-center items-center min-w-max'}>
+      <div className={'flex flex-row justify-between w-full mb-4  px-4'}>
         <button
           data-testid={'returnButton'}
           type={'button'}
