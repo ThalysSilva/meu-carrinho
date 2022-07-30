@@ -1,14 +1,12 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import React, { ReactElement, ReactNode } from 'react';
-
 import type { AppProps } from 'next/app';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import { Container } from '../components/shared/Container';
-
-import '../styles/globals.css';
 import { CartProvider } from '../context/cart';
+import '../styles/globals.css';
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

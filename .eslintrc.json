@@ -1,13 +1,13 @@
 {
   "env": {
-      "browser": true,
-      "es2021": true
+    "browser": true,
+    "es2021": true
   },
   "extends": [
-      "next/core-web-vitals",
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended"
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "settings": {
     "react": {
@@ -17,17 +17,13 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-  "plugins": [
-      "react",
-      "@typescript-eslint", 
-      "react-hooks"
-  ],
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
   "rules": {
     "quotes": [
       "warn",
@@ -50,6 +46,7 @@
     "space-in-parens": [2, "never"],
     "array-bracket-spacing": [2, "never"],
     "computed-property-spacing": [2, "never"],
+    "no-empty-function": "off",
     "object-curly-spacing": [2, "always"],
     "no-console": ["error"],
     "react-hooks/exhaustive-deps": "off",
@@ -64,7 +61,6 @@
     "max-len": [
       "warn",
       {
-
         "tabWidth": 2,
         "ignoreStrings": true,
         "code": 120,
@@ -74,6 +70,7 @@
 
     // typescript
     "@typescript-eslint/no-unused-vars": ["warn", { "args": "none" }],
+    "@typescript-eslint/no-empty-function": ["error", { "allow": ["arrowFunctions"] }],
 
     // react
     "react/prop-types": "warn",
