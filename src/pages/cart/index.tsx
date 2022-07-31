@@ -14,7 +14,7 @@ function Cart() {
   return (
     <Container
       className={
-        'flex flex-col relative w-full h-screen sm:h-[750px] sm:w-[450px] sm:rounded-2xl sm:shadow-2xl  min-w-[320px] bg-white  py-4'
+        'flex flex-col relative w-full h-screen sm:h-[750px] sm:w-[450px] sm:rounded-2xl sm:shadow-2xl  min-w-[360px] bg-white  py-4'
       }
     >
       <HeaderCart />
