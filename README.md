@@ -7,7 +7,7 @@ O projeto é sobre um carrinho desenvolvido utilizando as premissas do desing Mo
 
 Espero que achem interessante, aceito feedbacks !
 
-segue o link do projeto na vercel: https://meu-carrinho-thalyssilva.vercel.app/cart
+segue o link do projeto na vercel: https://meu-carrinho-thalyssilva.vercel.app/
 
 
 se quiser rodar o projeto na sua máquina, siga as instruções abaixo:
@@ -43,7 +43,7 @@ The project is about a cart developed using Mobile First design premises, genera
 
 I hope you find it interesting, I accept feedbacks!
 
-is my project in vercel: https://meu-carrinho-thalyssilva.vercel.app/cart
+is my project in vercel: https://meu-carrinho-thalyssilva.vercel.app/
 
 
 if you want run this project in your PC, folow the instructions below:
