@@ -12,6 +12,8 @@ Segue o link do projeto na vercel: https://meu-carrinho-thalyssilva.vercel.app/
 Se quiser rodar o projeto na sua máquina, siga as instruções abaixo:
 
 -> Baixe o projeto
+-> Crie um arquivo chamado `.env.local` na raiz do seu diretório
+-> Dentro do `.env.local` adicione a seguinte linha: `NEXT_PUBLIC_BASE_URL=https://api.jsonbin.io/v3/b`
 -> Pelo terminal, acesse a pasta do projeto
 -> Rode os seguintes comandos:
 `npm install`
@@ -48,6 +50,8 @@ This is my project in vercel: https://meu-carrinho-thalyssilva.vercel.app/
 If you want run this project in your PC, folow the instructions below:
 
 -> Download the project to your pc
+-> Create a file with name `.env.local` in directory root
+-> Inside on `.env.local` add below row: `NEXT_PUBLIC_BASE_URL=https://api.jsonbin.io/v3/b`
 -> In terminal, access the directory project
 -> Run this commands:
 `npm install`
