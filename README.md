@@ -17,7 +17,7 @@ se quiser rodar o projeto na sua máquina, siga as instruções abaixo:
 -> rode os seguintes comandos:
 `npm install`
 `npm run dev`
--> acesse o localhost:3000 no seu navegador.
+-> acesse o  http://localhost:3000 no seu navegador.
 
 
 
@@ -53,7 +53,7 @@ if you want run this project in your PC, folow the instructions below:
 -> run this commands:
 `npm install`
 `npm run dev`
--> In browser navigate to localhost:3000.
+-> In browser navigate to http://localhost:3000.
 
 
 
